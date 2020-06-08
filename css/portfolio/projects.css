@@ -1,0 +1,135 @@
+#portfolio-projects {
+  padding: 100px 15px;
+}
+
+#portfolio-projects h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+#portfolio-projects p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  color: #929292;
+  line-height: 1.5;
+}
+
+#portfolio-projects .info .buttons {
+  padding: 20px 0;
+}
+
+#portfolio-projects .info .buttons .fas {
+  padding-right: 10px;
+}
+
+#portfolio-projects .info .buttons .fab {
+  padding-right: 10px;
+}
+
+#portfolio-projects .info a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+  background: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#portfolio-projects .technologies {
+  padding: 100px 0;
+}
+
+#portfolio-projects h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+#portfolio-projects .technologies .icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 15px;
+  font-size: 80px;
+}
+
+#portfolio-projects .project-image {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+#portfolio-projects .blog-container .content-area {
+  display: flex;
+}
+
+#portfolio-projects .blog-container .content-area .inside-content-area {
+  width: 70%;
+  display: inline-block;
+  padding: 15px;
+}
+
+#portfolio-projects .blog-container .content-area .right-widgets {
+  width: 30%;
+  display: inline-block;
+}
+
+#portfolio-projects .blog-container .content-area .right-widgets .widget-box {
+  padding: 15px;
+}
+
+#portfolio-projects .project-image .img {
+  width: 100%;
+  height: 450px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+#portfolio-projects .project-video {
+  text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  #portfolio-projects h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  #portfolio-projects p {
+    font-size: 1rem;
+  }
+
+  #portfolio-projects .project-video iframe {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #portfolio-projects h1 {
+    font-size: 2rem;
+  }
+
+  #portfolio-projects p {
+    font-size: 1rem;
+  }
+
+  #portfolio-projects .info .buttons a {
+    margin-bottom: 10px;
+  }
+
+  #portfolio-projects .technologies .icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    font-size: 80px;
+  }
+
+  #portfolio-projects .project-video iframe {
+    width: 100% !important;
+  }
+}

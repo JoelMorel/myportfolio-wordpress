@@ -1,0 +1,109 @@
+#blog {
+  padding: 100px 15px;
+  background: #f9fafc;
+}
+
+#blog .title h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#blog .blog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 588px;
+  column-gap: 15px;
+  row-gap: 15px;
+  overflow: hidden;
+}
+
+#blog .blog-container .post {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+}
+
+#blog .blog-container .post-image {
+  height: 100%;
+  width: 100%;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain, cover !important;
+  background-color: whitesmoke !important;
+}
+
+#blog .blog-container .post-details {
+  background: white;
+  padding: 35px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, -200px, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+#blog .blog-container .post-details h4 {
+  font-size: 1.1rem;
+  color: #13171a;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+#blog .blog-container .post-details p {
+  color: #919191;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+#blog .blog-container .more {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: 0;
+  background: white;
+  padding: 10px 35px 35px;
+}
+#blog .blog-container .more .button {
+  color: #13171a;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  display: inline-block;
+  border-bottom: 2px solid #13171a;
+}
+
+#blog .blog-container .post:hover .post-details {
+  transform: translate3d(0, -588px, 0);
+  cursor: pointer;
+}
+
+/* Mobile code starts here */
+
+@media only screen and (max-width: 960px) {
+}
+
+@media only screen and (max-width: 767px) {
+  #blog .title h1 {
+    font-size: 3rem;
+  }
+
+  #blog .blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    column-gap: 15px;
+    row-gap: 15px;
+    overflow: hidden;
+  }
+}
